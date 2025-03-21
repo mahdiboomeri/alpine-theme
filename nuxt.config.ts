@@ -43,12 +43,7 @@ export default defineNuxtConfig({
     }
   },
   pages: true,
-  modules: [
-    envModules.tokens,
-    envModules.studio,
-    '@nuxt/content',
-    updateModule as any
-  ],
+  modules: [envModules.tokens, envModules.studio, '@nuxt/content', updateModule as any, '@nuxtjs/color-mode'],
   components: [
     { path: resolve('./components'), global: true },
     { path: resolve('./components/content'), global: true },
