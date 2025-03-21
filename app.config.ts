@@ -27,12 +27,12 @@ export default defineAppConfig({
       message: 'Follow me on'
     },
     socials: {
-      twitter: '',
+      twitter: '#',
       instagram: '',
-      github: '',
+      github: '#',
       facebook: '',
       medium: '',
-      youtube: ''
+      youtube: '#'
     },
     form: {
       successMessage: 'Message sent. Thank you!'
