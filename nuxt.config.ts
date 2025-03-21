@@ -8,7 +8,6 @@ const { resolve } = createResolver(import.meta.url)
 const envModules = {
   tokens: process?.env?.THEME_DEV_TOKENS_PATH || '@nuxt-themes/tokens',
   elements: process?.env?.THEME_DEV_ELEMENTS_PATH || '@nuxt-themes/elements',
-  studio: process?.env?.THEME_DEV_STUDIO_PATH || '@nuxthq/studio',
   typography: process?.env?.THEME_DEV_TYPOGRAPHY_PATH || '@nuxt-themes/typography'
 }
 
@@ -43,7 +42,7 @@ export default defineNuxtConfig({
     }
   },
   pages: true,
-  modules: [envModules.tokens, envModules.studio, '@nuxt/content', updateModule as any, '@nuxtjs/color-mode'],
+  modules: [envModules.tokens, '@nuxt/content', updateModule as any, '@nuxtjs/color-mode'],
   components: [
     { path: resolve('./components'), global: true },
     { path: resolve('./components/content'), global: true },
